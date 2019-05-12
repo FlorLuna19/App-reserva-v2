@@ -1,14 +1,3 @@
-function pedirDatos(cbRequest) {
-    var request = new XMLHttpRequest();
-
-    request.onload = function() {
-        var datosLugares = JSON.parse(request.responseText);
-
-        cbRequest(datosLugares);
-    }
-    request.open('GET', 'server/lugaresDisponibles')
-}
-
 function pedirDatosReserva(callback){
     let request = new XMLHttpRequest();
 
@@ -19,5 +8,19 @@ function pedirDatosReserva(callback){
         callback(datosLugares);
     }
     request.open('GET', 'datos/reserva');
+    request.send()
+}
+
+
+function pedirDatosReservaVuelta(callback){
+    let request = new XMLHttpRequest();
+
+    request.onload = function() {
+
+        let datosLugaresVuelta = JSON.parse(request.responseText);
+        //console.log(datosLugares);
+        callback(datosLugaresVuelta);
+    }
+    request.open('GET', 'datos/reservaVuelta');
     request.send()
 }

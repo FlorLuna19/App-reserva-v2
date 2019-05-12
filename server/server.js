@@ -108,7 +108,7 @@ app.get('/recorrido', function (req, res) {
 })
 
 app.get('/empresa', function (req, res) {
-  console.log("Entre a recorrido");
+  console.log("Entre a empresa");
   res.sendFile(path.join(__dirname, '../client/html/empresa.html'));
 })
 
@@ -137,9 +137,32 @@ app.get('/datos/reserva', function (req, res) {
       res.send(jsonDatosDiasReserva)
     }
     })
-  console.log("estoy aca");
+  console.log("Estoy aca");
 
 })
+
+//Uso archivo reserva para vuelta
+app.get('/datos/reservaVuelta', function (req, res) {
+  fs.readFile(path.join(__dirname, 'disponibilidad2.json'), (err, data) => {
+    if (err == undefined) {
+      let jsonDatosDiasReservaVuelta = JSON.parse(data);
+      res.send(jsonDatosDiasReservaVuelta)
+    }
+    })
+  console.log("Estoy aca2");
+
+})
+
+
+
+
+
+
+
+
+
+
+
 
 //NO LO VAMOS A USAR POR EL MOMENTO
 app.get('/datos/reservarlugar', function (req, res) {
