@@ -1,3 +1,6 @@
+//Datos de registro
+const nombreUsuario = document.getElementById("user-id");
+
 //Función de login
 function login() {
 
@@ -48,8 +51,8 @@ function mostrarUsuarioLogueado(callback){
     request.send();
 }
 
-function muestraDatosUsuario(datos) {
-    var info = datos;
+function muestraDatosUsuario(datoUsuario) {
+    var info = datoUsuario;
     console.log("aca")
 
 }

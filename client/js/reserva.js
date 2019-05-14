@@ -50,16 +50,7 @@ function crearBotonPorDia(dia, horario, disponibilidadDelDia){
     divContenedorLugares.appendChild(botonDia);
     
 }
-/*
-//Funcion que valida la disponibilidad de los horarios
-function validacion(disponibilidad) {
-    if ( disponibilidad == true) {
-        
-        console.log("Reserva realizada")
-    }else{
-        console.log("No hay disponibilidad")
-    }
-}*/
+
 
 //Funcion que valida la disponibilidad de los horarios
 function validacion(disponibilidad) {
@@ -68,14 +59,12 @@ function validacion(disponibilidad) {
         var ventana = document.getElementById('modalOk');
         ventana.style.display= "block";
         console.log("Se muestra el resultado de la reserva")
-
-        console.log("Reserva realizada")
-
+        console.log("Reserva realizada");
+        
     }else{
         var ventana = document.getElementById('modalNo');
         ventana.style.display= "block";
         console.log("Se muestra la ventana de no disponibilidad")
-
         console.log("No hay disponibilidad")
     }
 }
@@ -139,14 +128,7 @@ function mostrarVentana() {
 
 function ocultarVentana() {
     var ventana = document.getElementById('ventanaModalOk');
-    var cerrar = document.getElementById("btnModalOk");
-
-    cerrar.addEventListener('click', function() {
-
     ventana.style.display="none";
-    }
-    
-    )
     
     console.log("Se cierra la ventana de reserva")
 }
