@@ -491,7 +491,7 @@ nav{
 .caja-modal-Ok{
     background-color: rgba(50, 233, 33, 0.877);
     width: 300px;
-    height: 80px;
+    height: 100px;
     padding: 20px;
     border-radius: 5px;
     border: solid 3px white;
@@ -505,7 +505,7 @@ nav{
 .caja-modal-No{
     background-color: rgba(211, 17, 17, 0.877);
     width: 300px;
-    height: 80px;
+    height: 100px;
     padding: 20px;
     border-radius: 5px;
     border: solid 3px white;
@@ -537,10 +537,6 @@ nav{
     flex-direction: column;
     width: 32%;
     margin-top: 20px;
-}
-.caja-foto img:hover{
-    margin-bottom: 40px;
-    width: 80%;
 }
 
 /*ESTILO RECORRIDO*/

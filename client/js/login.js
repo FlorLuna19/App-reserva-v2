@@ -1,5 +1,6 @@
 //Datos de registro
-const nombreUsuario = document.getElementById("user-id");
+let nombreUsuario = document.getElementById("user-id");
+
 
 //Función de login
 function login() {
@@ -35,6 +36,7 @@ function login() {
 
 }
 
+/* No se implemento aun
 //Función que muestra el usuario registrado en el home
 function mostrarUsuarioLogueado(callback){
     let request = new XMLHttpRequest();
@@ -46,13 +48,12 @@ function mostrarUsuarioLogueado(callback){
        
     }
    
-   
     request.open('GET', '/usuarios/datosUsuarios');
     request.send();
-}
+}*/
 
-function muestraDatosUsuario(datoUsuario) {
-    var info = datoUsuario;
-    console.log("aca")
+function muestraDatosUsuario(nombreUsuario) {
+    var nombre = document.getElementById("user-id");
+    console.log("Hola" + nombreUsuario)
 
 }
