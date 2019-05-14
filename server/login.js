@@ -15,7 +15,7 @@ function validarUsuario(user, password){
     if (user == "user" && password == "user"){
         return true;
 
-    }if (user == "maria" && password =="maria"){
+    }if (user == "Maria" && password =="maria"){
         return true;
     }
     else {

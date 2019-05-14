@@ -7,6 +7,12 @@
 
     {
     "dia":"Lunes",
+    "disponibilidad":true,
+    "horario" : "07:30"
+    },
+
+    {
+    "dia":"Lunes",
     "disponibilidad":false,
     "horario" : "08:00"
     },
@@ -20,6 +26,12 @@
     {
     "dia":"Martes",
     "disponibilidad":true,
+    "horario": "07:30"
+    },
+
+    {
+    "dia":"Martes",
+    "disponibilidad":true,
     "horario": "08:00"
     },
 
@@ -31,7 +43,7 @@
 
     {
     "dia":"Miercoles",
-    "disponibilidad":false,
+    "disponibilidad":true,
     "horario": "08:00"
     },
 
@@ -39,6 +51,12 @@
     "dia":"Jueves",
     "disponibilidad":true,
     "horario": "07:00"
+    },
+
+    {
+    "dia":"Jueves",
+    "disponibilidad":false,
+    "horario": "07:30"
     },
 
     {
@@ -49,8 +67,14 @@
 
     {
     "dia":"Viernes",
-    "disponibilidad":false,
-    "horario": "08:00"
+    "disponibilidad":true,
+    "horario": "07:00"
+    },
+
+    {
+    "dia":"Viernes",
+    "disponibilidad":true,
+    "horario": "07:30"
     },
 
     {

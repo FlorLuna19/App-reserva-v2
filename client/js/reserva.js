@@ -3,7 +3,7 @@ let divContenedorLugares = document.getElementById("divContenedorLugares");
 let botonConsulta = document.getElementById("boton-consulta");
 
 
-//Se crea una variable para contener los botones 
+//Se crean variables para contener los botones 
 let divContenedorVuelta = document.getElementById("divContenedorVuelta")
 let botonConsulta2 = document.getElementById("boton-consulta2");
 
@@ -50,12 +50,32 @@ function crearBotonPorDia(dia, horario, disponibilidadDelDia){
     divContenedorLugares.appendChild(botonDia);
     
 }
+/*
+//Funcion que valida la disponibilidad de los horarios
+function validacion(disponibilidad) {
+    if ( disponibilidad == true) {
+        
+        console.log("Reserva realizada")
+    }else{
+        console.log("No hay disponibilidad")
+    }
+}*/
 
 //Funcion que valida la disponibilidad de los horarios
 function validacion(disponibilidad) {
     if ( disponibilidad == true) {
+
+        var ventana = document.getElementById('modalOk');
+        ventana.style.display= "block";
+        console.log("Se muestra el resultado de la reserva")
+
         console.log("Reserva realizada")
+
     }else{
+        var ventana = document.getElementById('modalNo');
+        ventana.style.display= "block";
+        console.log("Se muestra la ventana de no disponibilidad")
+
         console.log("No hay disponibilidad")
     }
 }
@@ -90,7 +110,7 @@ function crearBotonesDiasVuelta(datos){
 function crearBotonPorDiaVuelta(dia, horario, disponibilidadDelDia){
     let botonDia = document.createElement("button");
     let espaciado = document.createElement('br')
-    botonDia.setAttribute("class", "estilo-boton");
+    botonDia.setAttribute("class", "estilo-botonVuelta");
     let textoDia = document.createTextNode(dia);
     let textoHorario = document.createTextNode(horario);
     botonDia.appendChild(textoDia);
@@ -104,4 +124,29 @@ function crearBotonPorDiaVuelta(dia, horario, disponibilidadDelDia){
 
     divContenedorVuelta.appendChild(botonDia);
     
+}
+
+
+
+
+
+//VENTANA MODAL
+function mostrarVentana() {
+    var ventana = document.getElementById('ventanaModalOk');
+    ventana.style.display= "block";
+    console.log("Se muestra el resultado de la reserva")
+}
+
+function ocultarVentana() {
+    var ventana = document.getElementById('ventanaModalOk');
+    var cerrar = document.getElementById("btnModalOk");
+
+    cerrar.addEventListener('click', function() {
+
+    ventana.style.display="none";
+    }
+    
+    )
+    
+    console.log("Se cierra la ventana de reserva")
 }
