@@ -30,6 +30,7 @@ app.use(bodyParser.urlencoded({ extended: true}));
 app.use(express.static(path.join(__dirname, '../client')));
 app.use(express.static(path.join(__dirname, '../client/html')));
 app.use(express.static(path.join(__dirname, '../client/js')));
+app.use(express.static(path.join(__dirname, '../client/css')));
 
 
 

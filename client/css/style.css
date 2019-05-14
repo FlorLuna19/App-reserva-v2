@@ -5,10 +5,6 @@
     padding: 0px;
     margin: 0px;
 }
-html{
-    background-image: url(./images/fondo.jpg);
-}
-
 
 body{
     max-width: 1024px;
@@ -16,6 +12,9 @@ body{
     margin-right: auto;
     padding: 0;
     /*background-color: rgb(233, 233, 233);*/
+    background-image: url("../images/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: 'Source Sans Pro', sans-serif;
     display: flex;
     flex-flow: column;
@@ -412,6 +411,12 @@ nav{
     padding: 20px;
     padding-bottom: 30px;
     align-content: space-between;
+    display: flex;
+    flex-flow: row;
+}
+
+.contacto{
+    margin-left: 62%;
 }
 
 /*ESTILO USUARIO*/
@@ -558,4 +563,5 @@ nav{
 
 .caja-mapa{
     padding-top: 10px;
+    width: 60%;
 }
