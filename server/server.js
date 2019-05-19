@@ -6,9 +6,9 @@ const fs = require('fs');
 const expressSession = require('express-session');
 
 
-//const mongodb = require('mongodb');
-//const MongoClient = mongodb.MongoClient;
-//const mongoURL = 'mongodb://localhost: 27017;
+const mongodb = require('mongodb');
+const MongoClient = mongodb.MongoClient;
+const mongoURL = 'mongodb://localhost: 27017;
 //const dbName = "testdb";
 
 //Js
