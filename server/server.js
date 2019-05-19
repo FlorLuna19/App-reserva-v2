@@ -5,8 +5,10 @@ const path = require("path");
 const fs = require('fs');
 const expressSession = require('express-session');
 
-
+//Libreria de Mongodb
 const mongodb = require('mongodb');
+
+//MongoClient
 const MongoClient = mongodb.MongoClient;
 const mongoURL = 'mongodb://localhost: 27017';
 const dbName = "expressdb";
