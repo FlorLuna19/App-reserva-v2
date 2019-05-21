@@ -8,7 +8,7 @@ const expressSession = require('express-session');
 //Libreria de Mongodb
 const mongodb = require('mongodb');
 
-//MongoClient
+//MongoClient //Usado en 'dbLogin'
 const MongoClient = mongodb.MongoClient;
 const mongoURL = 'mongodb://localhost: 27017';
 const dbName = "expressdb";

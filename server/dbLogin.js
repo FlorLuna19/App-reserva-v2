@@ -49,10 +49,6 @@ function consultaUsuarios() {
 
 function loginUsuario(cbDataReady, cbError) {
 
-    // Si quieren probar qué pasa cuando tirar error, descomenten estas dos líneas:
-    // cbError("error de no asasd asd laksdj lñakjw ieoa ");
-    // return;
-
     MongoClient.connect(mongoURL, { useNewUrlParser: true }, (err, client) => {
 
         if (err) {            
@@ -60,11 +56,11 @@ function loginUsuario(cbDataReady, cbError) {
             cbError("No se pudo conectar a la DB. " + err);
         } else {
 
-            // Me traigo un objeto que apunte a la db "testdb"
+            // Me traigo un objeto que apunte a la db "expressdb"
             const db = client.db(dbName);
 
-            // Me traigo un objeto que apunte a la colección "products"
-            const collection = db.collection("products");
+            // Me traigo un objeto que apunte a la colección "usuarios"
+            const collection = db.collection("usuarios");
 
             // Consulto TODOS los elementos de la colección, los convierto en Array y los paso al render
             collection.find().toArray((err, list) => {
@@ -89,7 +85,7 @@ function loginUsuario(cbDataReady, cbError) {
  * @param {function} cbDataReady Callback de éxito, retorna cantidad de documentos eliminados
  * @param {function} cbError Callback para retornar mensaje de error si lo hubiera
  * 
- */
+ 
 function deleteOne(documentId, cbDataReady, cbError) {
 
     MongoClient.connect(mongoURL, { useNewUrlParser: true }, (err, client) => {
@@ -121,4 +117,4 @@ function deleteOne(documentId, cbDataReady, cbError) {
         }
     });
 
-}
+}*/
